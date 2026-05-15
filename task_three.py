@@ -3,7 +3,12 @@ class Restaurant():
         self.restaurantName= restaurantName
         self.restaurantType = restaurantType
         self.restaurantRating = 00
-    
+        
+    def describe_restaurant(self, restaurantSurface, numberWorkers):
+        self.restaurantSurface = restaurantSurface
+        self.numberWorkers = numberWorkers
+        print(f"Our restaurant has a surface equal of: {restaurantSurface}, in this restaurant work: {numberWorkers}")
+
     def update_rating(self):
         newRating = input("The restaurant rating: ")
         self.restaurantRating = newRating
